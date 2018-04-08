@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.readandcall.Main_Form">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+        android:id="@+id/lnlbuttons"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/btnread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="READ"
+            android:layout_weight="50"
+            android:background="#800000"
+            android:textColor="#fff"
+            android:layout_margin="20px"
+
+            />
+
+        <Button
+            android:id="@+id/btncall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALL"
+            android:background="#800000"
+            android:textColor="#fff"
+            android:layout_weight="50"
+            android:layout_margin="20px"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstcontacts"
+        android:layout_below="@id/lnlbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</RelativeLayout>

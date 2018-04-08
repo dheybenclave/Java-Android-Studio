@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.sqlite.Main_Form">
+
+    <LinearLayout
+        android:id="@+id/lnlinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="USERNAME"
+            android:textSize="30px"/>
+
+        <EditText
+            android:id="@+id/txtusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:layout_marginBottom="50px"
+            android:hint="type your username"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:textSize="30px"/>
+
+        <EditText
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:layout_marginBottom="10px"
+            android:hint="type your username"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_below="@+id/lnlinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:textColor="#fff"
+        android:layout_margin="20px"
+        android:background="#1742bc"/>
+
+
+        <Button
+            android:id="@+id/btnsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:layout_margin="20px"
+            android:layout_below="@id/btnsave"
+            android:textColor="#fff"
+            android:background="#1fb4b9" />
+
+
+    <ListView
+        android:id="@+id/lstuser"
+        android:layout_below="@id/btnsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

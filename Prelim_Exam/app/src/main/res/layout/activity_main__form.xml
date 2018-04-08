@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.prelim_exam.Main_Form">
+
+    <LinearLayout
+        android:id="@+id/pnltop"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/lblstatustop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center_horizontal"
+            android:gravity="center"
+            android:text="TO DO "
+            android:layout_marginLeft="20px"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textColor="#f0fff0"
+            android:layout_weight="0"
+            android:textSize="25px" />
+
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/txtsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginLeft="20px"
+            android:hint="search here.."
+            android:textSize="20px"
+            android:completionThreshold="1"
+            android:layout_weight="10" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:padding="5px"
+            android:src="@drawable/final1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pnlheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/banner"
+        android:orientation="vertical"
+        android:layout_below="@+id/pnltop"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20px"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lbldate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="NURSING SCHEDULER"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textColor="#fff"
+                android:textSize="70px"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/lblsubdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textAllCaps="true"
+                android:text="A P P L I C A T I O N"
+                android:textColor="#8deedc"
+                android:background="#343434"
+                android:textAlignment="center"
+                android:textSize="30px" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/imgdown"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/pnlheader"
+        android:background="#e9fbf5"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="40px"
+        android:layout_height="30px"
+        android:layout_marginLeft="50px"
+        android:background="#e9fbf5"
+        android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstcustomview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/imgdown">
+    </ListView>
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_gravity="bottom"
+        android:layout_marginEnd="30px"
+        android:layout_marginBottom="40px"
+        android:background="@drawable/add"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

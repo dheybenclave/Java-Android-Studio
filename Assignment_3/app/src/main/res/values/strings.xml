@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment_3</string>
+
+    <string name="title_activity_splash__form">Splash_Form</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.customlistview.Listitem">
+
+    <TextView
+        android:id="@+id/lblid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40px"
+        android:gravity="right"
+        android:layout_margin="10px"
+        android:textColor="#2e8b57"
+        android:text="ID NUMBER :  " />
+
+    <LinearLayout
+        android:id="@+id/lnltop"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblid"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/btnimage"
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:src="@drawable/insert"
+            android:layout_margin="20px"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="top|center_horizontal|center_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="70"
+            android:layout_marginTop="50px"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#2e8b57"
+                android:background="#d3f4e1"
+                android:id="@+id/lbladdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:text="Address : " />
+            <TextView
+                android:textColor="#2e8b57"
+                android:background="#d3f4e1"
+                android:id="@+id/lblmobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:text="Mobile : " />
+            <TextView
+                android:textColor="#2e8b57"
+                android:background="#d3f4e1"
+                android:id="@+id/lblemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:text="Email : " />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="5px"
+        android:orientation="vertical"
+        android:id="@+id/lnldetalis"
+        android:layout_below="@+id/lnltop"
+        android:layout_width="match_parent"
+        android:background="#d3f4e1"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#2e8b57"
+            android:id="@+id/lblfullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:text="Full name :" />
+
+        <TextView
+            android:textColor="#2e8b57"
+            android:id="@+id/lblposition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:text="Position  : " />
+
+    </LinearLayout>
+
+</RelativeLayout>

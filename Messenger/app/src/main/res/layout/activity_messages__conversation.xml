@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.messenger.Messages_Conversation">
+
+    <LinearLayout
+        android:id="@+id/pnltop"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="#2dbb9d"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/back"
+            android:textColor="#fff"
+            android:textSize="20px" />
+
+        <ImageView
+            android:id="@+id/imgphoto"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:padding="10px" />
+
+        <TextView
+            android:id="@+id/lblname1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:fontFamily="sans-serif"
+            android:gravity="center|left"
+            android:paddingRight="20px"
+            android:singleLine="true"
+            android:text="Name "
+            android:textColor="#f0fff0"
+            android:textSize="35px"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btncall"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:background="@drawable/call"
+            android:fontFamily="sans-serif"
+            android:textColor="#f0fff0"
+            android:textSize="25px" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pnlfooter"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="#f5f5f5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10px">
+
+        <EditText
+            android:id="@+id/txtmessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:hint="type messages here.."
+            android:isScrollContainer="true"
+            android:overScrollMode="always"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:layout_margin="10px"
+            android:layout_weight="90"
+            android:background="#2dbb9d"
+            android:text="SEND"
+            android:textColor="#fff"
+            android:textSize="22px" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/listviewconvo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/pnlfooter"
+        android:layout_below="@id/pnltop"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"></ListView>
+
+
+</RelativeLayout>

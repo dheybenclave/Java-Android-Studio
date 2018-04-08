@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_default"
+    android:id="@+id/pnlmain"
+    android:padding="30px"
+    tools:context="com.example.dheoclaveria.myapplication.AddGroup_Form">
+
+
+    <LinearLayout
+        android:id="@+id/pnltop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10px">
+
+        <ImageView
+            android:id="@+id/btnaddimage"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:contextClickable="true"
+            android:adjustViewBounds="true"
+            android:background="@drawable/curve_default_transparent"
+            android:clickable="true"
+            android:src="@drawable/book"
+            android:scaleType="fitXY"
+            android:text="Add Image"
+            android:textSize="6sp" />
+
+        <EditText
+            android:id="@+id/txtgroupname"
+            android:singleLine="true"
+            android:lines="2"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:hint="Type your group Name . . ."
+            android:textColor="#fff"
+            android:textSize="25px" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pnltop"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:padding="10px">
+
+        <TextView
+            android:id="@+id/lblchangebackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:contextClickable="true"
+            android:includeFontPadding="true"
+            android:padding="20px"
+            android:text="CHANGE YOUR \n BACKGROUND  COLOR"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="17px"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnaddgroupnow"
+            android:background="@drawable/curve_add"
+            android:textColor="#fff"
+            android:text="ADD TO GROUP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

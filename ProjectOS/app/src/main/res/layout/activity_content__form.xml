@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.dheoclaveria.projectos.Content_Form">
+
+
+
+    <RelativeLayout
+        android:id="@+id/pblbot"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnnext"
+            android:layout_height="100px"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@drawable/right"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:layout_width="100px" />
+        <Button
+            android:id="@+id/btnprev"
+            android:layout_height="100px"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:background="@drawable/left"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:layout_width="100px" />
+
+        <ImageView
+            android:id="@+id/imgview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:keepScreenOn="true"
+            android:src="@drawable/notepad"
+            android:background="#181817"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pnlfooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:background="@drawable/background_default_trans"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10px"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/btnshowdetails"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_margin="10px"
+                android:layout_weight="50"
+                android:background="@drawable/curve_default"
+                android:text="SHOE DETAILS"
+                android:textColor="#fff"
+                android:textSize="22px" />
+
+            <Button
+                android:id="@+id/btnopencamera"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_margin="10px"
+                android:layout_weight="90"
+                android:background="@drawable/curve_save"
+                android:text="OPEN CAMERA"
+                android:textColor="#fff"
+                android:textSize="22px" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/pnlheader"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="#142b2b"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/lblgroupname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:text="GROUP NAME"
+            android:textAlignment="center"
+            android:textColor="#f0fff0"
+            android:textSize="26px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

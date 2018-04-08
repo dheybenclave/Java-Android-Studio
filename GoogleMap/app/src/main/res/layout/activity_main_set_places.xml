@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:background="@drawable/background_default"
+    tools:context="com.example.nienie.myfavoriteplaces.MainSetPlaces">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:descendantFocusability="beforeDescendants">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10px"
+            android:descendantFocusability="beforeDescendants"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:background="#067c4f"
+                android:textColor="#fff"
+                android:padding="20px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTER PLACE NAME"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPlace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Place"
+                android:layout_marginLeft="20px"
+                android:textColor="#fff"
+                android:padding="20px"
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
+
+            <TextView
+                android:background="#067c4f"
+                android:textColor="#fff"
+                android:padding="20px"
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:text="ENTER SUB NAME"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etSubName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Sub name"
+                android:layout_marginLeft="20px"
+                android:textColor="#fff"
+                android:padding="20px"
+                android:inputType="textPersonName"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:text="TYPE"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:id="@+id/spType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:textColor="#fff"
+                    android:padding="20px"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:background="#067c4f"
+                android:textColor="#fff"
+                android:padding="20px"
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:text="ENTER ADDRESS"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="20px"
+                android:textColor="#fff"
+                android:padding="20px"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RatingBar
+                    android:id="@+id/rbRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_centerHorizontal="true"
+                    android:numStars="5"
+                    android:textAlignment="center"
+                    android:layout_margin="25px"
+                    android:theme="@style/RatingBar" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24px"
+                android:background="@drawable/curve_save"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

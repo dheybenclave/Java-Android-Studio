@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77ffe8b5"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.dheoclaveria.projectos.ImageDetails_Form"
+    tools:showIn="@layout/activity_image_details__form">
+
+
+    <ScrollView
+        android:id="@+id/scrollfill"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:hint="Set your Title . . . . "
+                android:textColor="#242424"
+                android:textSize="29px" />
+
+            <EditText
+                android:id="@+id/txtsubjectname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="20px"
+                android:enabled="false"
+                android:hint="Selected Subject Name . . . "
+                android:textColor="#242424"
+                android:textSize="25px" />
+
+            <TextView
+                android:id="@+id/lbl"
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="#035c52"
+                android:padding="15px"
+                android:textSize="27px"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100px"
+                    android:layout_height="100px"
+                    android:layout_weight="0"
+                    android:layout_marginTop="20px"
+                    android:padding="10px"
+                    android:alpha="0.7"
+                    android:layout_marginLeft="30px"
+                    android:background="@drawable/transparent"
+                    android:src="@drawable/keyword" />
+
+
+                <EditText
+                    android:id="@+id/txtkeyword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40px"
+                    android:layout_marginTop="20px"
+                    android:textColor="#242424"
+                    android:hint="Your keyword here . . "
+                    android:textSize="25px"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="40px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imgbtndate"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_marginRight="20px"
+                        android:layout_weight="0"
+                        android:alpha="0.7"
+                        android:src="@drawable/calendar" />
+
+                    <TextView
+                        android:id="@+id/lbldate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Click me to set your date" />
+                </LinearLayout>
+
+
+                <TextView
+
+                    android:id="@+id/lbl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#035c52"
+                    android:padding="15px"
+                    android:textSize="27px"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="40px"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/imgbtntime"
+                        android:layout_width="100px"
+                        android:layout_height="100px"
+                        android:layout_marginRight="20px"
+                        android:layout_weight="0"
+                        android:alpha="0.7"
+                        android:background="@drawable/transparent"
+                        android:src="@drawable/time" />
+
+                    <TextView
+                        android:id="@+id/lbltime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Click me to set your time" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/lbl12"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#035c52"
+                    android:padding="15px"
+                    android:textSize="27px"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="20px"
+                android:hint="You can add Description \n \n what you want example( for programming ). . . . . "
+                android:maxHeight="500px"
+                android:maxLines="10"
+                android:textColor="#242424"
+                android:textSize="25px" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</android.support.v4.widget.NestedScrollView>

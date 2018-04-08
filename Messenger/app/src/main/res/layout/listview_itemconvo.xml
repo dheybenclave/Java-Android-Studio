@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10px"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#f5f5f5"
+    android:layout_marginBottom="30px"
+    android:padding="20px"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/pnlleft"
+        android:layout_width="5px"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/lblbody"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:layout_width="match_parent"
+        android:textAlignment="textStart"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:text="Sub Body..."
+
+        android:textColor="#329581"  />
+
+    <TextView
+        android:id="@+id/lbldate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#329581"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:textSize="18px"
+        android:textAlignment="textStart"
+        android:layout_marginLeft="10px"
+        android:textStyle="italic"
+        android:text="date . . . ."/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pnlright"
+        android:layout_width="5px"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-5px"
+        android:background="#f5f5f5">
+
+        </LinearLayout>
+
+</LinearLayout>

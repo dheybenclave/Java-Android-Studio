@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#858585"
+    tools:context="com.example.dheoclaveria.references.Main_Form">
+
+    <LinearLayout
+        android:id="@+id/pnltop"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnopenpref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OPEN PREFERENCES"/>
+
+        <Button
+            android:id="@+id/btnloadepref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Load PREFERENCES"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25px"
+        android:layout_marginRight="25px"
+        android:layout_marginTop="12dp"
+        android:layout_margin="5px"
+        android:layout_below="@+id/pnltop"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_margin="5px"
+            android:hint="textbox 1"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_margin="5px"
+            android:hint="textbox 2"/>
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_margin="5px"
+            android:hint="textbox 2"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyFavoritePlaces</string>
+    <string name="type_prompt">Choose a Type</string>
+
+    <string-array name="type_arrays">
+        <item>Hospital</item>
+        <item>Restaurant</item>
+        <item>School</item>
+        <item>Office</item>
+        <item>Park</item>
+    </string-array>
+</resources>

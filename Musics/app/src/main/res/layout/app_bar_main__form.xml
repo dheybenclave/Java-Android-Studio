@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818"
+    android:orientation="horizontal"
+
+    tools:context="com.example.dheoclaveria.musics.Main_Form">
+
+    <LinearLayout
+        android:id="@+id/pnltop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimaryDark"
+        android:orientation="horizontal">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimaryDark"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:layout_weight="70"
+                    android:background="?attr/colorPrimaryDark"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/txtsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="80"
+                    android:background="?attr/colorPrimaryDark"
+                    android:clickable="true"
+                    android:gravity="center" />
+            </LinearLayout>
+
+
+        </android.support.design.widget.AppBarLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pnlfooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="10px"
+        android:background="@drawable/side_nav_bar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="20px"
+        android:paddingLeft="40px"
+        android:paddingTop="20px"
+        android:layout_marginBottom="20px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:id="@+id/imgbot"
+            android:layout_width="80px"
+            android:layout_margin="3px"
+            android:layout_gravity="center"
+            android:layout_height="80px"
+            android:src="@drawable/logo"/>
+
+
+        <LinearLayout
+            android:id="@+id/pnlbotfieldlabelA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="30"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/skduration"
+                android:alpha="0"
+                android:layout_width="match_parent"
+                android:layout_height="1px" />
+
+            <TextView
+                android:id="@+id/lblbotsongname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textIsSelectable="true"
+                android:focusable="true"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:text="Song Name : Unknown"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblbotartistname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:textIsSelectable="true"
+                android:focusable="true"
+                android:paddingLeft="20px"
+                android:paddingRight="20px"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="Artist Name : Unknown"
+                android:textColor="@color/colorAccent"
+                android:textSize="22px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnprevsong"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:background="@drawable/prev"
+                android:textSize="0px" />
+
+            <ToggleButton
+                android:id="@+id/btnplaypuase"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:background="@drawable/pause"
+                android:textSize="0px" />
+
+            <Button
+                android:id="@+id/btnnextsong"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:background="@drawable/next"
+                android:textOff="||"
+                android:textOn=">"
+                android:textSize="0px" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pnlfooter"
+        android:layout_below="@id/pnltop">
+
+        <include layout="@layout/content_main__form" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

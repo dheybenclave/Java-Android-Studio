@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.qrcode.Main_Form">
+
+
+    <LinearLayout
+android:id="@+id/pnltop"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="25px"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:hint="Enter your text here"/>
+
+        <Button
+        android:id="@+id/btngenerateqrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate QR Code"/>
+
+        <Button
+            android:id="@+id/btnsaveqrcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save QR Code"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_below="@id/pnltop"
+        android:layout_margin="30px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

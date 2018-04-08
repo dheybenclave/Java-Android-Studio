@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruiz.customlistview.ListItem">
+
+    <TextView
+        android:id="@+id/txtID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity= "right"
+        android:textSize="20sp"
+        android:layout_marginRight="10sp"
+        android:text="ID"
+        />
+  <LinearLayout
+      android:id="@+id/linear1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/txtID"
+      >
+      <ImageView
+          android:id="@+id/imgPic"
+          android:layout_width="200px"
+          android:layout_height="220px"
+          android:background="@color/colorPrimary"
+          android:text="IMAGE"
+          android:layout_marginLeft="10sp"
+          android:textSize = "20sp"
+          />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_weight="70">
+          <TextView
+              android:id="@+id/txtAddress"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text ="Address:"
+              android:layout_below="@+id/txtPosition"
+              android:layout_marginLeft="20sp"
+              android:layout_marginTop="5sp"
+              />
+          <TextView
+              android:id="@+id/txtMobile"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text ="Mobile:"
+              android:layout_marginLeft="20sp"
+              android:layout_below="@+id/txtAddress"
+              android:layout_marginTop="10sp"/>
+          <TextView
+              android:id="@+id/txtEmail"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text ="Email:"
+              android:layout_marginLeft="20sp"
+              android:layout_below="@+id/txtMobile"
+              android:layout_marginTop="10sp"
+              />
+      </LinearLayout>
+  </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtfullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fullname"
+        android:layout_marginLeft="10sp"
+        android:layout_below="@id/linear1"
+        android:layout_marginTop="10sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/txtPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text ="Position:"
+        android:layout_marginLeft="10sp"
+        android:layout_below="@+id/txtfullname"
+        android:layout_marginTop="10sp"
+        android:textAlignment="center"
+        />
+
+
+</RelativeLayout>

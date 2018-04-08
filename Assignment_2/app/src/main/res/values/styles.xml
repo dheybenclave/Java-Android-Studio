@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Theme.AppTheme.Light.NoActionBar.Fullscreen" parent="android:Theme.Material.Light.NoActionBar.Fullscreen" >
+        <item name="android:colorPrimary">@color/material_colorsuccess</item>
+        <item name="android:colorPrimaryDark">?android:attr/colorAccent</item>
+        <item name="android:colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">@color/material_colorsmokegray</item>
+        <item name="android:colorForeground">@android:color/background_dark</item>
+        <item name="android:navigationBarColor">@color/material_colorsuccess</item>
+        <item name="android:textColorPrimaryInverse">@android:color/background_dark</item>
+        <item name="android:windowBackground">@color/material_colorsmokegray</item>
+    </style>
+
+</resources>

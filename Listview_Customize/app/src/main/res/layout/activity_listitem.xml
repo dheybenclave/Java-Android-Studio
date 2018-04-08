@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcf0d1">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.dheoclaveria.listview_customize.Listitem">
+
+        <TextView
+            android:id="@+id/lblid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:gravity="right"
+            android:text="ID NUMBER :  "
+            android:textColor="#2e8b57"
+            android:textSize="40px" />
+
+        <LinearLayout
+            android:id="@+id/lnltop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lblid"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnimage"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20px"
+                android:foregroundGravity="top|center_horizontal|center_vertical"
+                android:src="@drawable/insert" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:layout_weight="70"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbladdress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:background="#d3f4e1"
+                    android:text="Address : "
+                    android:textColor="#2e8b57" />
+
+                <TextView
+                    android:id="@+id/lblmobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:background="#d3f4e1"
+                    android:text="Mobile : "
+                    android:textColor="#2e8b57" />
+
+                <TextView
+                    android:id="@+id/lblemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10px"
+                    android:background="#d3f4e1"
+                    android:text="Email : "
+                    android:textColor="#2e8b57" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnldetalis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnltop"
+            android:layout_margin="5px"
+            android:background="#d3f4e1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblfullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:text="Full name :"
+                android:textColor="#2e8b57" />
+
+            <TextView
+                android:id="@+id/lblposition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:text="Position  : "
+                android:textColor="#2e8b57" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

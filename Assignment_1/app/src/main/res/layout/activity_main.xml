@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10px"
+    tools:context="com.example.dheoclaveria.assignment_1.MainActivity">
+
+
+    <TextView
+        android:id="@+id/lblinputcountries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20sp"
+        android:text="ADD COUNTRY"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15px">
+
+
+        <EditText
+            android:id="@+id/txtinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:hint="Add Countries"
+            android:inputType="textCapWords"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.80"
+            android:background="@color/colorPrimaryDark"
+            android:backgroundTint="#0ebf05"
+            android:text="ADD"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30px">
+
+        <Spinner
+            android:id="@+id/lstcountries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:popupBackground="@android:color/background_light"
+            android:textColor="@android:color/background_light"></Spinner>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/meterialcolor_red"
+        android:text="DELETE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/btnshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="SHOW"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+
+    <ListView
+        android:id="@+id/lvcountries"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:padding="2dp">
+
+    </ListView>
+
+</LinearLayout>
+
+</ScrollView>

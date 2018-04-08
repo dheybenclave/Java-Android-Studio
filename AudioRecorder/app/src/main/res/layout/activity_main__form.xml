@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.audiorecorder.Main_Form">
+
+
+
+    <ToggleButton
+    android:id="@+id/tgbtnrecord"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:textOn="STOP"
+        android:textOff="START RECORDING"
+        android:background="#800000"
+        android:textColor="#fff"
+        android:layout_margin="20px"
+
+    android:layout_centerInParent="true"/>
+
+    <ToggleButton
+        android:layout_below="@+id/tgbtnrecord"
+        android:id="@+id/tgbtnstopplayback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="STOP  PLAYBACK"
+        android:textOff="START PLAYBACK"
+        android:background="#800000"
+        android:textColor="#fff"
+        android:layout_margin="20px"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

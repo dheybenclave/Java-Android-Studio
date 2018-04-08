@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#FFFF00"
+    tools:context="com.example.dheoclaveria.assignment2.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+            <Spinner
+                android:id="@+id/SpnGender"
+                android:layout_width="80dp"
+                android:layout_height="40dp"></Spinner>
+            <EditText
+                android:id="@+id/txtFullname"
+                android:layout_width="270dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-40dp"
+                android:layout_height="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Pizza Flavor"/>
+
+        <RadioGroup
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hawaiian"
+                android:id="@+id/optHawai"/>
+            <RadioButton
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pepperoni"
+                android:id="@+id/optPepper" />
+            <RadioButton
+                android:layout_marginLeft="130dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ham"
+                android:id="@+id/optHam"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Size"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+        <RadioGroup
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small"
+                android:layout_gravity="center"
+
+                android:id="@+id/optSmall"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:layout_marginLeft="140dp"
+                android:id="@+id/optMedium" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="Large"
+                android:id="@+id/optLarge"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:text="Additionals"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+        <RadioGroup
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cheese"
+                android:onClick="clickedCheese"
+                android:id="@+id/chkCheese"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mushroom"
+                android:onClick="clickedMushroom"
+                android:id="@+id/chkMushroom" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Garlic"
+                android:onClick="clickedGarlic"
+                android:id="@+id/chkGarlic" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Additional Request"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/txtAddreq"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:scrollbars="vertical"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="270dp"
+            android:layout_marginLeft="270dp"
+            android:onClick="passdata"
+            android:text="Submit" />
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

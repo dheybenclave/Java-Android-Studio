@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bee075"
+    tools:context="com.example.lenovo.thefirststepoflearning.QuizColors">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtColHighName"
+            android:textSize="25dp"
+            android:text="High Score:"
+            android:textColor="#000000"
+            android:layout_marginLeft="170dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtColHighScore"
+            android:textSize="25dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:layout_marginLeft="320dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtColorQuiz"
+            android:text="3. What Color is this?"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/lnHighScore"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/lnColorMenu1"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/txtColorQuiz"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginLeft="50dp"
+                android:onClick="QuizLetter"
+                android:background="@drawable/blue1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageButton
+                android:layout_marginLeft="60dp"
+                android:onClick="QuizNumber"
+                android:background="@drawable/red1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu2"
+            android:layout_below="@id/lnColorMenu1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txtColorBlue"
+                android:layout_marginLeft="20dp"
+                android:layout_width="140dp"
+                android:textColor="#000000"
+                android:layout_height="70dp" />
+            <EditText
+                android:id="@+id/txtColorRed"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000000"
+                android:layout_width="140dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu3"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/lnColorMenu2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginLeft="50dp"
+                android:onClick="QuizLetter"
+                android:background="@drawable/black1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageButton
+                android:layout_marginLeft="60dp"
+                android:onClick="QuizNumber"
+                android:background="@drawable/orange1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu4"
+            android:layout_below="@id/lnColorMenu3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txtColorBlack"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:layout_width="140dp"
+                android:layout_height="70dp" />
+            <EditText
+                android:id="@+id/txtColorOrange"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000000"
+                android:layout_width="140dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu5"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/lnColorMenu4"
+            android:orientation="horizontal"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginLeft="50dp"
+                android:onClick="QuizLetter"
+                android:background="@drawable/white1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageButton
+                android:layout_marginLeft="60dp"
+                android:onClick="QuizNumber"
+                android:background="@drawable/green1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu6"
+            android:layout_below="@id/lnColorMenu5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txtColorWhite"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:layout_width="140dp"
+                android:layout_height="70dp" />
+            <EditText
+                android:id="@+id/txtColorGreen"
+                android:layout_marginLeft="40dp"
+                android:layout_width="140dp"
+                android:textColor="#000000"
+                android:layout_height="70dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu7"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/lnColorMenu6"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginLeft="50dp"
+                android:onClick="QuizLetter"
+                android:background="@drawable/purple1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageButton
+                android:layout_marginLeft="60dp"
+                android:onClick="QuizNumber"
+                android:background="@drawable/yellow1"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu8"
+            android:layout_below="@id/lnColorMenu7"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txtColorPurple"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:layout_width="140dp"
+                android:layout_height="70dp" />
+            <EditText
+                android:id="@+id/txtColorYellow"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000000"
+                android:layout_width="140dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSaveCol"
+            android:text="Finish"
+            android:onClick="ResultColor"
+            android:layout_below="@id/lnColorMenu8"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+
+    </RelativeLayout>
+</ScrollView>

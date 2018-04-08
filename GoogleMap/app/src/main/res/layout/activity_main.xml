@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_default"
+    android:layout_height="match_parent"
+    tools:context="com.example.nienie.myfavoriteplaces.MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+
+            <ImageView
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:src="@drawable/bookmark"/>
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="350px"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:text="Log in now"
+                android:padding="20px"
+
+                android:textSize="30px"
+                android:background="@drawable/curve_default"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE AN ACCOUNT"
+                android:textAlignment="center"
+                android:textSize="30px"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>

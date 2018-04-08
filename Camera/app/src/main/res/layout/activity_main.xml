@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.camera.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/pblbot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+    <Button
+        android:id="@+id/btnopencamera"
+        android:layout_margin="30px"
+        android:layout_weight="50"
+        android:text="open camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@id/btnopencamera"
+        android:id="@+id/btnprev"
+        android:layout_margin="30px"
+        android:layout_alignParentBottom="true"
+        android:text="prev"
+        android:layout_weight="50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <Button
+            android:layout_below="@id/btnopencamera"
+            android:id="@+id/btnnext"
+            android:layout_margin="30px"
+            android:layout_alignParentBottom="true"
+            android:text="next"
+            android:layout_weight="50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView
+        android:layout_above="@+id/pblbot"
+        android:id="@+id/imgview"
+        android:layout_margin="30px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

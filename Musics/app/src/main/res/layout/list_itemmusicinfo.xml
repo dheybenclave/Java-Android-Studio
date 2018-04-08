@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pnllist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10px"
+        android:background="#121212"
+        android:foregroundTint="@color/colorAccent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10px">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="100px"
+
+            android:layout_height="100px"
+            android:padding="10px"
+            android:src="@drawable/listitem" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblsongname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unknown Songs"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30px"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:transitionName="@string/appbar_scrolling_view_behavior"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblartistname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Unknown Artist"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="23px" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="80"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblduration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="00:00:00"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="17px" />
+
+
+                <ImageView
+                    android:id="@+id/imgstatus"
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                  />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

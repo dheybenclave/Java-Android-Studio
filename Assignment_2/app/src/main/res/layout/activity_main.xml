@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_colorwhite">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.dheoclaveria.assignment_2.MainActivity">
+
+
+        <ImageView
+            android:id="@+id/imgheader"
+            android:layout_width="match_parent"
+            android:layout_height="180px"
+            android:background="@color/material_colororangered"
+            android:src="@drawable/pizza"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:id="@+id/lnlinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgheader"
+            android:layout_marginTop="20px"
+            android:padding="10px">
+
+            <Spinner
+                android:id="@+id/cmbgender"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.08" />
+
+            <EditText
+                android:id="@+id/txtinput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:hint="Input name here.."
+                android:inputType="textCapWords"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/lblflavor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lnlinput"
+            android:background="@color/material_colororangered"
+            android:padding="10px"
+            android:text="PIZZA FLAVOR :"
+            android:textAlignment="center"
+            android:textColor="@color/material_colorwhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/lnlpizza"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:layout_below="@+id/lblflavor"
+            android:layout_margin="10px"
+            android:layout_weight="30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imghawaiian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="30"
+                android:background="@color/material_colorsmokegray"
+                android:src="@drawable/hawaiian" />
+
+            <ImageView
+                android:id="@+id/imghapepperoni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="30"
+                android:background="@color/material_colorsmokegray"
+                android:src="@drawable/pepperoni" />
+
+
+            <ImageView
+                android:id="@+id/imghamcheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10px"
+                android:layout_weight="30"
+                android:background="@color/material_colorsmokegray"
+                android:src="@drawable/hamcheese" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rdgflavor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lnlpizza"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10px"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdhawaiian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imghawaiian"
+                android:layout_margin="10px"
+                android:layout_weight="30"
+                android:checked="true"
+                android:text="Hawaiian"
+                android:textAlignment="center"
+                android:textColor="@color/material_colororangered" />
+
+            <RadioButton
+                android:id="@+id/rdpepperoni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imghapepperoni"
+                android:layout_margin="10px"
+                android:layout_weight="30"
+                android:src="@drawable/pepperoni"
+                android:text="Pepperoni"
+                android:textAlignment="center"
+                android:textColor="@color/material_colororangered" />
+
+            <RadioButton
+                android:id="@+id/rdhamcheese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imghamcheese"
+                android:layout_margin="10px"
+                android:layout_weight="30"
+                android:text="Ham/Cheese"
+                android:textAlignment="center"
+                android:textColor="@color/material_colororangered" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/lblsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rdgflavor"
+            android:layout_marginBottom="10px"
+            android:background="@color/material_colororangered"
+            android:padding="10px"
+            android:text="CHOOSE SIZE :"
+            android:textAlignment="center"
+            android:textColor="@color/material_colorwhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/rdgsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lblsize"
+            android:background="@color/material_colorsmokegray"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rdsolo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:checked="true"
+                    android:text="Solo" />
+
+                <RadioButton
+                    android:id="@+id/rdmedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="Medium" />
+
+                <RadioButton
+                    android:id="@+id/rdlarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="Large" />
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imgsize"
+                android:layout_width="wrap_content"
+                android:layout_height="180px"
+                android:layout_margin="10px"
+                android:layout_weight="50"
+                android:background="@color/material_colorsmokegray"
+                android:src="@drawable/size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/grpaddtional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rdgsize"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lbladdtional"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rdgflavor"
+                android:layout_marginBottom="10px"
+                android:background="@color/material_colororangered"
+                android:padding="10px"
+                android:text="ADDITIONAL:"
+                android:textAlignment="center"
+                android:textColor="@color/material_colorwhite"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:id="@+id/grpcheese"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkcheese"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbladdtional"
+                    android:layout_marginLeft="10px"
+                    android:layout_weight="60"
+                    android:text="Cheese" />
+
+                <ImageView
+                    android:id="@+id/imgcheese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:layout_weight="40"
+                    android:src="@drawable/cheese" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/grpmushroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkmushroom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbladdtional"
+                    android:layout_marginLeft="10px"
+                    android:layout_weight="60"
+                    android:text="Mushroom" />
+
+                <ImageView
+                    android:id="@+id/imgmushroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:layout_weight="40"
+                    android:src="@drawable/mushroom" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/grpgarlic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/chkgarlic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lbladdtional"
+                    android:layout_marginLeft="10px"
+                    android:layout_weight="60"
+                    android:text="Garlic" />
+
+                <ImageView
+                    android:id="@+id/imggarlic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60px"
+                    android:layout_weight="40"
+                    android:src="@drawable/garlic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/lbladdtionalrequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grpaddtional"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="10px"
+            android:background="@color/material_colororangered"
+            android:padding="10px"
+            android:text="ADDITIONAL REQUEST :"
+            android:textAlignment="center"
+            android:textColor="@color/material_colorwhite"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtaddrequest"
+            android:layout_width="match_parent"
+            android:layout_height="300px"
+            android:layout_below="@+id/lbladdtionalrequest"
+            android:layout_margin="20px"
+            android:background="@color/material_colorsmokegray"
+            android:hint="Input your request or addtional services here..."
+            android:textAlignment="viewStart"
+            android:textStyle="italic" />
+
+
+        <Button
+            android:id="@+id/btnproceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtaddrequest"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:background="@color/material_colorsuccess"
+            android:text="PROCEED TO SUMMARY"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</ScrollView>

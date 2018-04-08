@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcf0d1">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="130px"
+            android:background="@drawable/splash"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imglogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14px"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20px"
+            android:layout_below="@+id/header">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:fontFamily="cursive"
+                android:text="Restaurant Name :"
+                android:textColor="#962e12"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtrestoname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:layout_weight="20"
+                android:textColor="#962e12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:fontFamily="cursive"
+                android:text="Server Name :"
+                android:textColor="#962e12"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtservername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:textColor="#962e12" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lbltimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="20"
+                    android:fontFamily="casual"
+                    android:text="00:00:00"
+                    android:textAlignment="center"
+                    android:textColor="#962e12"
+                    android:textSize="70sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ToggleButton
+                        android:id="@+id/tbtnonoff"
+                        android:layout_width="170px"
+                        android:layout_height="80px"
+                        android:layout_margin="5px"
+                        android:background="@drawable/splash"
+                        android:fontFamily="casual"
+                        android:src="@drawable/splash"
+                        android:textColor="#FFF" />
+
+                    <Button
+                        android:id="@+id/btnreset"
+                        android:layout_width="170px"
+                        android:layout_height="80px"
+                        android:layout_margin="5px"
+                        android:background="@drawable/splash"
+                        android:fontFamily="casual"
+                        android:src="@drawable/splash"
+                        android:text="RESET"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/rtbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10px"
+                android:numStars="5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:text="You can rate now!."
+                android:textColor="#962e12"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="60px">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_weight="50"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btndate"
+                        android:layout_width="270px"
+                        android:layout_height="270px"
+                        android:layout_gravity="center"
+                        android:layout_margin="5px"
+                        android:background="@drawable/date"
+                        android:fontFamily="casual"
+                        android:src="@drawable/date"
+                        android:textColor="#FFF" />
+
+                    <TextView
+                        android:id="@+id/lbldate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/header"
+                        android:layout_gravity="center"
+                        android:fontFamily="casual"
+                        android:text="DATE PICKER"
+                        android:textColor="#962e12"
+                        android:textSize="25px"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_weight="50"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btntime"
+                        android:layout_width="270px"
+                        android:layout_height="270px"
+                        android:layout_gravity="center"
+                        android:layout_margin="5px"
+                        android:background="@drawable/times"
+                        android:fontFamily="casual"
+                        android:src="@drawable/splash"
+                        android:textColor="#FFF" />
+
+                    <TextView
+                        android:id="@+id/lbltime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/header"
+                        android:layout_gravity="center"
+                        android:fontFamily="casual"
+                        android:text="TIME PICKER"
+                        android:textColor="#962e12"
+                        android:textSize="25px"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:fontFamily="cursive"
+                android:layout_margin="10px"
+                android:text="Addtional Remarks :"
+                android:textColor="#962e12"
+                android:textSize="40px"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:textSize="40px"
+                android:textAlignment="center"
+                android:fontFamily="cursive"
+                android:hint="type your additonal remarks here..."
+                android:background="@drawable/body"/>
+
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="match_parent"
+                android:layout_height="90px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/splash"
+                android:fontFamily="casual"
+                android:text="SAVE"
+                android:textColor="#FFF" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

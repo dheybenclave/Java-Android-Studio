@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#bee075"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.thefirststepoflearning.Main4Activity">
+
+    <TextView
+        android:id="@+id/txtTitleColors"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:background="@drawable/background6"
+        android:textColor="#000000"
+        android:textSize="55dp"
+        android:fontFamily="serif"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="110dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearFirst"
+        android:layout_below="@id/txtTitleColors"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btnBlue"
+            android:layout_width="90dp"
+            android:layout_marginTop="10dp"
+            android:onClick="colorblue"
+            android:background="@drawable/blue"
+            android:layout_marginLeft="20dp"
+            android:layout_height="90dp" />
+        <ImageButton
+            android:id="@+id/btnRed"
+            android:layout_width="90dp"
+            android:onClick="colorred"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/red"
+            android:layout_marginLeft="30dp"
+            android:layout_height="90dp" />
+        <ImageButton
+            android:id="@+id/btnYellow"
+            android:layout_width="90dp"
+            android:layout_marginTop="10dp"
+            android:onClick="coloryellow"
+            android:background="@drawable/yellow"
+            android:layout_marginLeft="30dp"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearSecond"
+        android:layout_below="@id/linearFirst"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btnGreen"
+            android:layout_width="90dp"
+            android:layout_marginTop="10dp"
+            android:onClick="colorgreen"
+            android:background="@drawable/green"
+            android:layout_marginLeft="20dp"
+            android:layout_height="90dp" />
+        <ImageButton
+            android:id="@+id/btnBrown"
+            android:layout_width="90dp"
+            android:onClick="colorbrown"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/brown"
+            android:layout_marginLeft="30dp"
+            android:layout_height="90dp" />
+        <ImageButton
+            android:id="@+id/btnOrange"
+            android:layout_width="90dp"
+            android:layout_marginTop="10dp"
+            android:onClick="colororange"
+            android:background="@drawable/orange"
+            android:layout_marginLeft="30dp"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearThird"
+        android:layout_below="@id/linearSecond"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btnPurple"
+            android:layout_width="90dp"
+            android:layout_marginTop="10dp"
+            android:onClick="colorpurple"
+            android:background="@drawable/purple"
+            android:layout_marginLeft="20dp"
+            android:layout_height="90dp" />
+        <ImageButton
+            android:id="@+id/btnWhite"
+            android:layout_width="90dp"
+            android:onClick="colorwhite"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white"
+            android:layout_marginLeft="30dp"
+            android:layout_height="90dp" />
+        <ImageButton
+            android:id="@+id/btnBlack"
+            android:layout_width="90dp"
+            android:layout_marginTop="10dp"
+            android:onClick="colorblack"
+            android:background="@drawable/black"
+            android:layout_marginLeft="30dp"
+            android:layout_height="90dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

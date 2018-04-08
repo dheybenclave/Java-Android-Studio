@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.orientation.MainActivity">
+
+    <TextView
+        android:id="@+id/lbltimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textAlignment="center"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="10px"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnstop"
+        android:layout_below="@+id/lbltimer"
+        android:layout_weight="0.80"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="START"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnstop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnstart"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10px"
+        android:layout_weight="0.80"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="STOP"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnstop"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="RESET"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

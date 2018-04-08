@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/grpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:padding="10px">
+
+            <TextView
+                android:id="@+id/lbldate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:text="DATE PICKER"
+                android:inputType="textCapWords"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/btnselect"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_below="@+id/txtaddrequest"
+                android:layout_centerHorizontal="true"
+                android:text="SELECT"
+                android:src="@drawable/date"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/grptime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grpdate"
+            android:layout_marginTop="20px"
+            android:padding="10px">
+
+            <TextView
+                android:id="@+id/lbltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:text="TIME PICKER"
+                android:inputType="textCapWords"
+                android:textAlignment="viewStart"
+                android:textAllCaps="true"
+                android:textSize="17sp" />
+
+            <ImageButton
+                android:id="@+id/btnselect1"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_below="@+id/txtaddrequest"
+                android:layout_centerHorizontal="true"
+                android:text="SELECT"
+                android:src="@drawable/time"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/grptime"
+            android:layout_weight="1.00"
+            android:hint="Input name here.."
+            android:inputType="textCapWords"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="17sp" />
+        <Button
+            android:id="@+id/btnproceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtinput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:text="PROCEED"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/rtbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/btnproceed"/>
+
+    </RelativeLayout>
+</ScrollView>

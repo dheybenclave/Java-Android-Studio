@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.textmessage.Main_Form">
+
+
+    <EditText
+        android:id="@+id/txtcontacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:layout_margin="10px"
+        android:hint="contacts here"/>
+
+    <EditText
+        android:id="@+id/txtmessage"
+        android:layout_margin="20px"
+        android:layout_below="@id/txtcontacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="10"
+        android:textSize="25px"
+
+        android:textAlignment="textStart"
+        android:hint="type here...."/>
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20px"
+        android:layout_below="@id/txtmessage"/>
+
+    <ListView
+        android:layout_below="@id/btnsend"
+        android:id="@+id/lstmessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+</RelativeLayout>

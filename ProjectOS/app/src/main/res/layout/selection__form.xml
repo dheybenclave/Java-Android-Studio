@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.dheoclaveria.projectos.Selection_Form">
+
+    <LinearLayout
+        android:id="@+id/pnltop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#242424"
+        android:gravity="center"
+        android:padding="30px"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="100px"
+            android:layout_height="70px"
+            android:text="back"
+            android:textColor="#fff"
+            android:textSize="18px"
+            android:padding="0px"
+            android:layout_weight="0"
+            android:layout_margin="0px"
+            android:background="@drawable/curve_save" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="35px"
+            android:text="CHOOSE ICON"/>
+
+    </LinearLayout>
+
+    <GridView
+        android:background="#343434"
+        android:id="@+id/grdgroupselection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pnltop"
+        android:gravity="center"
+        android:numColumns="4"
+        android:textAlignment="center">
+    </GridView>
+
+
+</RelativeLayout>

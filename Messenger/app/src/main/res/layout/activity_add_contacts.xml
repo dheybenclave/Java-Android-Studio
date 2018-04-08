@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.messenger.AddContacts">
+
+    <LinearLayout
+        android:id="@+id/pnltop"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_gravity="center"
+        android:background="#2dbb9d"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/lblstatustop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Add Contacts"
+            android:textAlignment="center"
+            android:textColor="#f0fff0"
+            android:textSize="35px"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lstcustomviewaddcontacts"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pnltop"></ListView>
+
+
+</RelativeLayout>

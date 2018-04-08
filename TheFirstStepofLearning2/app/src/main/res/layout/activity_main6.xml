@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.lenovo.thefirststepoflearning.Main6Activity">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/lnCanvass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginLeft="5dp"
+            android:layout_width="40dp"
+            android:onClick="clickBlack"
+            android:background="#000000"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="clickRed"
+            android:background="#ff0000"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:background="#f6ff05"
+            android:onClick="clickYellow"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:background="#0260fc"
+            android:onClick="clickBlue"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:background="#00c813"
+            android:onClick="clickGreen"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:background="#8132d1"
+            android:onClick="clickMagenta"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:background="#000000"
+            android:onClick="clickWhite"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <ImageButton
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="-37dp"
+            android:background="#ffffff"
+            android:onClick="clickWhite"
+            android:layout_width="33dp"
+            android:layout_height="33dp" />
+    </LinearLayout>
+    <com.example.lenovo.thefirststepoflearning.CanvassView
+        android:layout_width="match_parent"
+        android:id="@+id/canvasCanvas"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/lnCanvass"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnClear" />
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_alignParentBottom="true"
+        android:layout_width="180dp"
+        android:onClick="clearCanvas"
+        android:text="Clear"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="190dp"
+        android:layout_width="180dp"
+        android:onClick="saveFile"
+        android:text="Save"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

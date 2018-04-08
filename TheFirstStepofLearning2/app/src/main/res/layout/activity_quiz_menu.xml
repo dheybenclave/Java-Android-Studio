@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#bee075"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.thefirststepoflearning.QuizMenu">
+
+    <TextView
+        android:id="@+id/txtMenu"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="40dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:text="Test your knowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/lnMenu1"
+        android:layout_marginTop="90dp"
+        android:layout_below="@id/txtMenu"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginLeft="60dp"
+            android:onClick="QuizLetter"
+            android:background="@drawable/background1"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageButton
+            android:layout_marginLeft="60dp"
+            android:onClick="QuizNumber"
+            android:background="@drawable/background3"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnMenu2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/lnMenu1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/background4"
+            android:onClick="QuizColor"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <ImageButton
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/background5"
+            android:onClick="QuizShape"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+</RelativeLayout>

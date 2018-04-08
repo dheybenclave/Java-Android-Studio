@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_colororangered">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.dheoclaveria.assignment_2.MainActivity">
+
+
+            <ImageView
+            android:id="@+id/imgheader"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@color/material_colororangered"
+            android:src="@drawable/pizza1" />
+
+        <TextView
+            android:id="@+id/lblsummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgheader"
+            android:background="@color/material_colorwhite"
+            android:padding="20px"
+            android:textSize="40px"
+            android:layout_margin="20px"/>
+
+
+        <Button
+            android:id="@+id/btnordernow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblsummary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:background="@color/material_colorsuccess"
+            android:ellipsize="middle"
+            android:fadingEdge="horizontal"
+            android:text="SEND ORDER NOW"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dheoclaveria.activity.MainActivity">
+
+
+    <TextView
+        android:id="@+id/lblname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20sp"
+        android:text="Enter your Name : " />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter you Name..."
+        android:inputType="text"
+        android:paddingTop="20sp" />
+
+    <Button
+        android:id="@+id/btngreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/colorAccent"
+        android:text="fuckyou"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px">
+
+        <TextView
+        android:id="@+id/lblnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.65"
+        android:text="Enter your Number : "/>
+
+        <EditText
+            android:id="@+id/txtnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:inputType="phone"
+            android:hint="ex : (0943-190-9900)"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px">
+        <TextView
+            android:id="@+id/lblemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:text="Enter your Email : "/>
+
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:inputType="textEmailAddress"
+            android:hint="ex : dheybenclave@gmail.com"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@color/colorPrimary"
+        android:text="Login"
+        android:layout_gravity="right"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20px">
+
+
+        <Spinner
+            android:id="@+id/lstconuntries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"></Spinner>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash1"
+    tools:context="com.example.dheoclaveria.prelim_exam.Splash_Form">
+
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="fill_parent"
+        android:layout_height="350px"
+        android:layout_marginTop="250px"
+        android:padding="20px"
+        android:src="@drawable/final1" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imglogo"
+        android:layout_gravity="center"
+        android:layout_marginTop="187dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="NURSING"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#fff"
+            android:textSize="70px"
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:id="@+id/lbl1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="SCHEDULER"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="#fff"
+            android:textSize="70px"
+            android:textStyle="bold|normal" />
+
+        <TextView
+            android:id="@+id/lblsubdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10px"
+            android:background="#343434"
+            android:fontFamily="sans-serif-condensed"
+            android:padding="20px"
+            android:text="A P P L I C A T I O N"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#8deedc"
+            android:textSize="30px" />
+    </LinearLayout>
+
+
+</RelativeLayout>

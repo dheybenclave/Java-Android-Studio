@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#bee075"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.thefirststepoflearning.QuizShapes">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtShapeHighName"
+            android:textSize="25dp"
+            android:text="High Score:"
+            android:textColor="#000000"
+            android:layout_marginLeft="170dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtShapeHighScore"
+            android:textSize="25dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:layout_marginLeft="320dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txtColorQuiz"
+            android:text="4. What shape is this?"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/lnHighScore"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/lnColorMenu1"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/txtColorQuiz"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginLeft="50dp"
+                android:onClick="QuizLetter"
+                android:background="@drawable/star"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageButton
+                android:layout_marginLeft="60dp"
+                android:onClick="QuizNumber"
+                android:background="@drawable/triangle"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu2"
+            android:layout_below="@id/lnColorMenu1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txtStar"
+                android:layout_marginLeft="20dp"
+                android:layout_width="140dp"
+                android:textColor="#000000"
+                android:layout_height="70dp" />
+            <EditText
+                android:id="@+id/txtTriangle"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000000"
+                android:layout_width="140dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu3"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/lnColorMenu2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginLeft="50dp"
+                android:onClick="QuizLetter"
+                android:background="@drawable/rectangle"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageButton
+                android:layout_marginLeft="60dp"
+                android:onClick="QuizNumber"
+                android:background="@drawable/square"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu4"
+            android:layout_below="@id/lnColorMenu3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txtRectangle"
+                android:layout_marginLeft="20dp"
+                android:layout_width="140dp"
+                android:textColor="#000000"
+                android:layout_height="70dp" />
+            <EditText
+                android:id="@+id/txtSquare"
+                android:layout_marginLeft="40dp"
+                android:layout_width="140dp"
+                android:textColor="#000000"
+                android:layout_height="70dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu5"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/lnColorMenu4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginLeft="50dp"
+                android:onClick="QuizLetter"
+                android:background="@drawable/circle"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <ImageButton
+                android:layout_marginLeft="60dp"
+                android:onClick="QuizNumber"
+                android:background="@drawable/heart"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnColorMenu6"
+            android:layout_below="@id/lnColorMenu5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/txtCircle"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000000"
+                android:layout_width="140dp"
+                android:layout_height="70dp" />
+            <EditText
+                android:id="@+id/txtHeart"
+                android:textColor="#000000"
+                android:layout_marginLeft="40dp"
+                android:layout_width="140dp"
+                android:layout_height="70dp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnSaveShape"
+            android:text="Finish"
+            android:onClick="ResultShape"
+            android:layout_below="@id/lnColorMenu6"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+</ScrollView>

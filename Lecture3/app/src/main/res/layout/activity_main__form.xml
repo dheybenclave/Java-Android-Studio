@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20px"
+    tools:context="com.example.dheoclaveria.lecture3.Main_Form">
+
+    <TextView
+        android:id="@+id/lblview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="location address"
+        />
+
+    <EditText
+        android:id="@+id/txtinput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btngeo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GeoCode"/>
+
+    <Button
+        android:id="@+id/btnreversegeo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" reverse GeoCode"/>
+
+</LinearLayout>

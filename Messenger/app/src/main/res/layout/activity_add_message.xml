@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dheoclaveria.messenger.AddMessage">
+
+    <LinearLayout
+        android:id="@+id/pnltop"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="#2dbb9d">
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_marginLeft="20px"
+            android:background="@drawable/back"
+            android:fadingEdge="horizontal"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:textColor="#fff"
+            android:textSize="20px" />
+
+        <TextView
+            android:id="@+id/lb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:fontFamily="sans-serif"
+            android:gravity="center|left"
+            android:text="To :"
+            android:textColor="#f0fff0"
+            android:textSize="25px"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5px"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/txtcontacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:completionThreshold="1"
+                android:hint="input contacts here..."
+                android:textColor="#fff"
+                android:textSize="25px" />
+
+            <Button
+
+                android:id="@+id/btnaddcontacts"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_weight="0"
+
+                android:background="@drawable/contact"
+                android:textColor="#fff"
+                android:textSize="68px"
+                android:typeface="serif" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pnlfooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="#f5f5f5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10px">
+
+        <EditText
+            android:id="@+id/txtmeessagecontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:layout_weight="30"
+            android:hint="type messages here.."
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="match_parent"
+            android:layout_height="70px"
+            android:layout_margin="5px"
+            android:layout_weight="90"
+            android:background="#2dbb9d"
+            android:text="SEND"
+            android:textColor="#fff"
+            android:textSize="22px" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lstcustomviewconvo"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/pnlfooter"
+        android:layout_below="@id/pnltop"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"></ListView>
+
+
+</RelativeLayout>

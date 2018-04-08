@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/pnlheader"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="#142b2b"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/lblstatustop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:text="COLOR PRIORITY STATUS"
+            android:textAlignment="center"
+            android:textColor="#f0fff0"
+            android:textSize="20px" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollfill"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/pnlheader"
+        android:background="#e9fbf5"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/pnlbody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/pnlforminput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pnlcolorstatus"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="25px"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbltitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19px"
+                    android:text="TITLE"
+                    android:textColor="#244e41"
+                    android:textSize="25px"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txttitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type here your Title. . . "
+                    android:textSize="27px" />
+
+                <TextView
+                    android:id="@+id/lbldetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:text="DETAILS"
+                    android:textColor="#244e41"
+                    android:textSize="25px"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/txtdetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="200px"
+                    android:hint="Type here your Details. . . "
+                    android:textSize="27px" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/pnldatetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pnlline"
+                android:layout_margin="15px"
+                android:background="#42777a"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#142b2b"
+                    android:padding="15px"
+                    android:text="FROM"
+                    android:textColor="#fff"
+                    android:textSize="27px"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbltitldate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="20px"
+                        android:layout_weight="50"
+                        android:text="DATE :"
+                        android:textAlignment="textStart"
+                        android:textColor="#fff"
+                        android:textSize="25px"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/lbltitltime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_marginTop="20px"
+                        android:layout_weight="50"
+                        android:text="TIME : "
+                        android:textAlignment="textStart"
+                        android:textColor="#fff"
+                        android:textSize="25px"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnfrmdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:layout_weight="50"
+                        android:background="#142b2b"
+                        android:spinnerMode="dialog"
+                        android:text="date"
+                        android:textColor="#fff"
+                        android:textSize="22px" />
+
+                    <Button
+                        android:id="@+id/btnfrmtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:layout_weight="50"
+                        android:background="#142b2b"
+                        android:spinnerMode="dialog"
+                        android:text="time"
+                        android:textColor="#fff"
+                        android:textSize="22px" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lbl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#142b2b"
+                    android:text="TO"
+                    android:padding="15px"
+                    android:textColor="#fff"
+                    android:textSize="27px"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbltitldate1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_weight="50"
+                        android:text="DATE :"
+                        android:textAlignment="textStart"
+                        android:textColor="#fff"
+                        android:textSize="25px"
+                        android:layout_marginLeft="20px"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/lbltitltime1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20px"
+                        android:layout_weight="50"
+                        android:text="TIME : "
+                        android:textAlignment="textStart"
+                        android:textColor="#fff"
+                        android:layout_marginLeft="20px"
+                        android:textSize="25px"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40px"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btntodate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:layout_weight="50"
+                        android:background="#142b2b"
+                        android:spinnerMode="dialog"
+                        android:text="date"
+                        android:textColor="#fff"
+                        android:textSize="22px" />
+
+                    <Button
+                        android:id="@+id/btntotime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20px"
+                        android:layout_weight="50"
+                        android:background="#142b2b"
+                        android:spinnerMode="dialog"
+                        android:text="time"
+                        android:textColor="#fff"
+                        android:textSize="22px" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/lbl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pnldatetime"
+                android:layout_marginTop="20px"
+                android:text="PRIORITY"
+                android:textAlignment="center"
+                android:textColor="#244e41"
+                android:textSize="27px"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/pnlpriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lbl3"
+                android:layout_marginLeft="50px"
+                android:layout_marginRight="50px">
+
+                <TextView
+                    android:id="@+id/lbllow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_weight="33"
+                    android:text="LOW"
+                    android:textAlignment="textStart"
+                    android:textColor="#244e41"
+                    android:textSize="20px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblmeduim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_weight="33"
+                    android:text="MEDIUM"
+                    android:textAlignment="center"
+                    android:textColor="#244e41"
+                    android:textSize="20px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/lblhigh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20px"
+                    android:layout_weight="33"
+                    android:text="HIGH"
+                    android:textAlignment="textEnd"
+                    android:textColor="#244e41"
+                    android:textSize="20px"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sbpriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pnlpriority"
+                android:layout_margin="20px"
+                android:max="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/pnlfooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:background="#142b2b"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_margin="10px"
+                android:layout_weight="50"
+                android:background="#08c2ce"
+                android:text="SAVE"
+                android:textColor="#fff"
+                android:textSize="22px" />
+
+            <Button
+                android:id="@+id/btncancel"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_margin="10px"
+                android:layout_weight="50"
+                android:background="#42777a"
+                android:text="CANCEL"
+                android:textColor="#fff"
+                android:textSize="22px" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
